@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Manipulando a DOM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- DIV que será manipulada -->
+  <div id="manipula">
+    <p class="paragrafo"> TELETUBBIES
+    </p>
+    <p class="paragrafo">Tinky Winky -> Cor rocha, Dipsy -> Cor Verde, Laa-Laa -> Cor Amarela e Po - > Cor Vermelha
+    </p>
+  </div>
+  <!-- FIM da DIV que foi manipulada -->
+
+
+  <h2 class="chamada"> Altera a imagem escolhendo um personagem</h2>
+
+
+  <!-- DIV que armazenará todos os botões -->
+  <div id="botoes">
+    <!-- Botão 01 - Exibir imagem do Tinky Winky -->
+    <input type="button" value="Tink Wink"  onclick="exibirtinkwinky()"/>
+    <!--Fim Botão 01 -->
+
+    <!-- Botão 02 - Exibir imagem do Dipsy -->
+    <input type="button" value="Dipsy" onclick="exibirdipsy()" />
+    <!--Fim Botão 02-->
+
+    <!-- Botão 03 - Exibir imagem da Laa Laa-->
+    <input type="button" value="Laa-Laa" onclick="exibirlaa_laa()" />
+    <!--Fim Botão 3-->
+
+    <!-- Botão 04 - Exibir imagem do Po -->
+    <input type="button" value="Po" onclick="exibirpo()" />
+    <!--Fim Botão 04-->
+
+
+    <!-- Botão 05 - Reexibir imagem dos personagem -->
+    <input type="button" value="Teletubbies" onclick="exibirteletubbies()" />
+    <!--Fim Botão 05-->
+
+
+
+  </div>
+  <!-- FIM da DIV que armazena todos os botões -->
+
+
+  <img id="image" src="teletubbies.webp">
+
+  <script> // Começa a brincadeira com JS
+    // Botão 01 - Exibir imagem do Tinky Winky
+    function exibirtinkwinky() {
+      var img = document.querySelector("#image")
+      img.setAttribute('src', 'tinky_winky.jpg')
+    }
+    //fim do Botão 1
+
+    // Botão 2 - Exibir imagem do Dipsy
+    function exibirdipsy() {
+        var img = document.querySelector("#image")
+        img.setAttribute('src', 'dipsy_imagem.webp')           
+    }
+    //fim do Botão 2
+
+
+    // Botão 03 - Exibir a imagem da Laa Laa
+    function exibirlaa_laa() {
+        var img = document.querySelector("#image")
+        img.setAttribute('src', 'laa_laa.jpg') 
+    }
+    //fim do Botão 3
+    
+     // Botão 04 - Exibir a imagem do Po
+     function exibirpo() {
+        var img = document.querySelector("#image")
+        img.setAttribute('src', 'po_jpg.webp') 
+    }
+    //fim do Botão 4
+
+   // Botão 5 - Exibir a imagem dos teletubbies
+  function exibirteletubbies() {
+    var img = document.querySelector("#image")
+    img.setAttribute('src', 'teletubbies.webp')
+  }
+  //fim do Botão 18
+
+
+  </script> <!-- Termina a brincadeira com JS -->
+
+  <br>
+  <hr>
+</body>
+
+</html>
